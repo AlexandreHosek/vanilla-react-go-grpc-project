@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package message.v1;
+
+option go_package = "/rpc;messagerpc";
+
+message ReturnMessageRequest {
+  string message = 1;
+}
+
+message ReturnMessageResponse {
+  string message = 1;
+}
+
+service Service {
+  rpc ReturnMessage(ReturnMessageRequest) returns (ReturnMessageResponse) {}
+}
