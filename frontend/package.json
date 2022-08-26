@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "build": "esbuild src/app.tsx --bundle --minify --sourcemap --outfile=public/bundle.js"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +16,22 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "esbuild": "^0.15.0"
+    "@types/node": "^18.7.13",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.35.1",
+    "esbuild": "^0.15.0",
+    "eslint": "^8.22.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard-with-typescript": "^22.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.1",
+    "eslint-plugin-react": "^7.31.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
   }
 }
