@@ -7,7 +7,7 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/les4principes/simple-website/backend/message/v1"
+	message_v1 "github.com/les4principes/simple-website/backend/message/v1"
 	messagerpc "github.com/les4principes/simple-website/backend/message/v1/rpc"
 	"google.golang.org/grpc"
 )
