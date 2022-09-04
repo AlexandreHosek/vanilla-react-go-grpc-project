@@ -8,6 +8,9 @@ import {
 } from "./rpc/proto/message/v1/message_pb";
 
 function App() {
+
+
+
   return (
     <div>
       <h1>React app bundled with esbuild</h1>
