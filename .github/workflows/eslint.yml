@@ -1,0 +1,14 @@
+name: Eslint
+
+on: [pull_request]
+
+jobs:
+  eslint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Code Checkout
+        uses: actions/checkout@v2
+      - name: Code Linting
+        run: cd frontend && npm install 
+      - name: Code Linting
+        run: cd frontend && npm run lint 
